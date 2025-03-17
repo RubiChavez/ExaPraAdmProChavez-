@@ -17,13 +17,13 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {//inicia clase
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Crea tabla en base de datos administracion
-        db.execSQL("create table empleado (numEmp integer primary key, nombre text, puesto text, diasT integer )");
+        db.execSQL("create table empleado (numEmp integer primary key, nombre text, puesto text, diasT integer, sueldo integer)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists empleado");
-        db.execSQL("create table empleado (numEmp integer primary key, nombre text, puesto text, diasT integer )");
+        db.execSQL("create table empleado (numEmp integer primary key, nombre text, puesto text, diasT integer, sueldo integer)");
     }//tgermina onUpgrade
 }//termina clase
 

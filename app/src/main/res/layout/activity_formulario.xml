@@ -79,6 +79,15 @@
             android:inputType="text"
             tools:ignore="TouchTargetSizeCheck" />
 
+        <EditText
+            android:id="@+id/etSueldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sueldo"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
         <Button
             android:id="@+id/btnAlta"
             android:layout_width="match_parent"
@@ -111,6 +120,7 @@
             android:id="@+id/btnCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="calcularSueldoFinal"
             android:text="Calcular Sueldo" />
 
         <TextView
